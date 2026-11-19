@@ -1,0 +1,16 @@
+TURBO RACER - Juego sencillo de carros
+
+CÓMO JUGAR
+1. Extrae la carpeta juego_carros.zip.
+2. Abre index.html con Google Chrome.
+3. Presiona INICIAR JUEGO.
+4. Usa las flechas izquierda/derecha o las teclas A/D para esquivar los autos.
+5. En celular puedes usar los botones de pantalla.
+
+ARCHIVOS
+- index.html: estructura del juego.
+- styles.css: diseño y estilos.
+- script.js: movimiento, tráfico, colisiones y puntuación.
+
+El récord se guarda en el navegador usando localStorage.
+No requiere instalar programas ni conexión a internet para jugar.

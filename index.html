@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turbo Racer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">MINI ARCADE</p>
+        <h1>🏁 TURBO RACER</h1>
+      </div>
+      <div class="stats">
+        <div><span>PUNTOS</span><strong id="score">0</strong></div>
+        <div><span>RÉCORD</span><strong id="best">0</strong></div>
+      </div>
+    </header>
+
+    <section class="game-area">
+      <div class="hud">
+        <span id="speed">VELOCIDAD: 1x</span>
+        <span id="status">¡LISTO!</span>
+      </div>
+      <canvas id="game" width="480" height="640" aria-label="Juego de carreras"></canvas>
+      <div class="overlay" id="overlay">
+        <div class="dialog">
+          <div class="big-car">🏎️</div>
+          <h2 id="overlay-title">¿Listo para correr?</h2>
+          <p id="overlay-text">Esquiva los demás autos y consigue la mayor puntuación.</p>
+          <button id="start-btn">INICIAR JUEGO</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p><b>Controles:</b> ← → o A / D para moverte</p>
+      <div class="mobile-controls">
+        <button id="left-btn" aria-label="Mover a la izquierda">◀</button>
+        <button id="right-btn" aria-label="Mover a la derecha">▶</button>
+      </div>
+      <p class="hint">Evita los autos. ¡Cada segundo suma puntos!</p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
